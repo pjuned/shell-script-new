@@ -1,6 +1,6 @@
 #!/bin/bash
-person1=ram
-person2=rahim
+person1=$1
+person2=$2
 date=$(date)
 echo "$person1: Hello $person2"
 echo "$person2: good morning $person1"
