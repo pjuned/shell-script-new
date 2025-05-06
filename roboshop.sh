@@ -13,9 +13,9 @@ do
     echo "instance is $i :"
     if [ $i == "mongodb" ] || [ $i == "shipping" ] || [ $i == "mysql" ]
     then
-        INSTANCE_TYPE="t3.small"
+        instance-type="t3.small"
     else
-        INSTANCE_TYPE="t2.micro"
+        instance-type="t2.micro"
     fi
 done 
 
