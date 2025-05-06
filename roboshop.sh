@@ -19,7 +19,7 @@ do
     fi
 done 
 
-#gettign ip addr of the instances
+#getting ip addr of the instances
 $IP_ADDRESS=$(aws ec2 run-instances --image-id ami-0b4f379183e5706b9 --instance-type $instance_type --subnet-id subnet-0123456789abcdef --security-group-ids sg-0544c498e225746f0 --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value=$i}]" --query  'Instances[0].PrivateIPAddress' --output text)
 echo "$I: IP_ADDRESS"
 
